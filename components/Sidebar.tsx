@@ -29,7 +29,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeCategory, onSelectCategory }) =
   };
 
   return (
-    <aside className="w-64 bg-gray-50/50 backdrop-blur-xl border-r border-gray-100 fixed left-0 top-16 h-[calc(100vh-4rem)] flex flex-col z-20 transition-all duration-300">
+    <aside className="w-64 bg-gray-50/50 backdrop-blur-xl border-r border-gray-100 fixed left-0 top-20 h-[calc(100vh-5rem)] flex flex-col z-20 transition-all duration-300">
       <div className="p-4 py-8">
         <nav className="space-y-1">
           <button

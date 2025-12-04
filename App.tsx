@@ -63,7 +63,7 @@ const App: React.FC = () => {
       <Sidebar activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
       
       {/* Main Content */}
-      <main className="ml-64 flex-1 p-8 lg:p-12 mt-16 overflow-y-auto min-h-[calc(100vh-4rem)]">
+      <main className="ml-64 flex-1 p-8 lg:p-12 mt-20 overflow-y-auto min-h-[calc(100vh-5rem)]">
         {/* Header Section */}
         <header className="mb-12 animate-fade-in-up max-w-6xl mx-auto">
           <div className="flex justify-between items-end pb-8 border-b border-gray-100">
