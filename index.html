@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
-      <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dentalgy OS | KPI Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
       body {
         background-color: #ffffff;
         color: #111827;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
       }
-      /* Custom Scrollbar for sleek look */
+      
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .kpi-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #0066cc;
+      }
+      
+      /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 6px;
         height: 6px;
@@ -28,22 +52,151 @@
         background: #d1d5db;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
-  }
-}
-</script>
 </head>
-  <body>
-    <div id="root"></div>
- <!-- Bootstrap JS -->
+<body>
+    <!-- CONTENIDO REAL (NO div vacío) -->
+    <div class="container mt-4">
+        <h1 class="mb-4 text-primary">Dentalgy OS | KPI Portal</h1>
+        <p class="lead mb-5">Panel de control de indicadores clave de desempeño</p>
+        
+        <div class="row">
+            <!-- KPI 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="kpi-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="card-title">KPIs Activos</h5>
+                        <h2 class="text-primary">12</h2>
+                        <p class="text-muted">Indicadores en monitoreo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- KPI 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="kpi-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5 class="card-title">Equipos</h5>
+                        <h2 class="text-success">8</h2>
+                        <p class="text-muted">Departamentos participando</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- KPI 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="kpi-icon">
+                            <i class="fas fa-trending-up"></i>
+                        </div>
+                        <h5 class="card-title">Crecimiento</h5>
+                        <h2 class="text-warning">+23%</h2>
+                        <p class="text-muted">Este trimestre</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- KPI 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="kpi-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h5 class="card-title">Ingresos</h5>
+                        <h2 class="text-info">$245K</h2>
+                        <p class="text-muted">Acumulado anual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tabla de ejemplo -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="mb-0">Resumen de KPIs por Departamento</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Departamento</th>
+                                <th>KPI</th>
+                                <th>Valor Actual</th>
+                                <th>Meta</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ventas</td>
+                                <td>Tasa de conversión</td>
+                                <td>15%</td>
+                                <td>18%</td>
+                                <td><span class="badge bg-warning">En progreso</span></td>
+                            </tr>
+                            <tr>
+                                <td>Marketing</td>
+                                <td>Leads generados</td>
+                                <td>1,240</td>
+                                <td>1,000</td>
+                                <td><span class="badge bg-success">Superada</span></td>
+                            </tr>
+                            <tr>
+                                <td>Operaciones</td>
+                                <td>Tiempo de respuesta</td>
+                                <td>2.4h</td>
+                                <td>2.0h</td>
+                                <td><span class="badge bg-danger">Crítico</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-   
+    <!-- Tu JavaScript personalizado (si lo necesitas) -->
+    <script>
+        // JavaScript básico para interactividad
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('KPI Portal cargado correctamente');
+            
+            // Ejemplo: Actualizar la hora
+            function updateTime() {
+                const now = new Date();
+                document.getElementById('current-time').textContent = 
+                    now.toLocaleDateString('es-ES', { 
+                        weekday: 'long', 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+            }
+            
+            // Agregar hora actual al header si quieres
+            const header = document.querySelector('h1');
+            if (header) {
+                const timeElement = document.createElement('small');
+                timeElement.className = 'd-block text-muted fs-6';
+                timeElement.id = 'current-time';
+                header.parentNode.insertBefore(timeElement, header.nextSibling);
+                updateTime();
+                setInterval(updateTime, 60000); // Actualizar cada minuto
+            }
+        });
+    </script>
 </body>
 </html>
